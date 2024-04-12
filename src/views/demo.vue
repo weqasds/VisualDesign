@@ -1,11 +1,9 @@
 <template>
-    <div>
-        <dEchart :option=optionobj></dEchart>
-    </div>
+    <Echart :option="optionobj" style="height: 100%;width: 100%;" :fileUrl="'@/excels/SheetJSRowProps.excel'"></Echart>
 </template>
 
-<script setup>
-import dEchart from '../components/Echart.vue'
+<script setup lang="ts">
+import Echart from '@/components/Echart.vue'
 const dataAll = [389, 259, 262, 324, 232, 176, 196, 214, 133, 370];
 const yAxisData = [
     '原因1',

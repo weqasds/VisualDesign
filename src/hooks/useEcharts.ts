@@ -1,32 +1,33 @@
-import { Ref, onMounted, onDeactivated, onBeforeUnmount, unref, nextTick} from "vue"
+import { Ref, onMounted, onDeactivated, onBeforeUnmount, unref, nextTick } from "vue"
 import * as echarts from 'echarts';
 import { EChartsOption } from "echarts"
-import {useDebounceFn, useEventListener, useTimeout, useTimeoutFn,tryOnUnmounted} from "@vueuse/core"
+import { useDebounceFn, useEventListener, useTimeout, useTimeoutFn, tryOnUnmounted } from "@vueuse/core"
 export function useEcharts(elRef: Ref<HTMLDivElement>) {
-  let chartInstance:echarts.ECharts=null;
-  let reSizeFn=echartsResize;
-  let cacheOption={} as Ref<EChartsOption>;
-  let removeFn=()=>{};
+  let chartInstance: echarts.ECharts = null;
+  let reSizeFn = echartsResize;
+  let cacheOption = {} as Ref<EChartsOption>;
+  let removeFn = () => { };
   reSizeFn = useDebounceFn(echartsResize, 200);
-  function initCharts(){
-    const el=unref(elRef)
+  function initCharts() {
+    const el = unref(elRef)
     if (!el) {
       return
     }
     chartInstance = echarts.init(el)
-    removeFn  = useEventListener(el,'echartsResize',reSizeFn);
+    removeFn = useEventListener(el, 'echartsResize', reSizeFn);
   }
-  function setOptions(options: EChartsOption){
+  function setOptions(options: EChartsOption) {
+    // return new Promise(()=>{})待决议
     initCharts()
     chartInstance.setOption(options)
   }
-  function echartsResize(){
+  function echartsResize() {
     chartInstance?.resize({
-        animation: {
-          duration: 300,
-          easing: 'quadraticIn',
-        },
-      }
+      animation: {
+        duration: 300,
+        easing: 'quadraticIn',
+      },
+    }
     )
   }
   tryOnUnmounted(() => {
