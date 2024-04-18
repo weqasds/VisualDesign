@@ -3,7 +3,10 @@
     <el-header>
       <el-menu default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
         <el-menu-item index="0">
-          <img style="width: 100px" src="./assets/Diqiu.svg" alt="Element logo" />
+          <a href="https://www.un.org/zh/">
+            <img style="width: 100px" src="./assets/Diqiu.svg" alt="Element logo">
+          </a>
+          </img>
         </el-menu-item>
         <div style="flex-grow: 0.9;"></div>
         <el-menu-item v-for="(item, index) in  items" :key="index" index={{index}}>
@@ -46,13 +49,13 @@ const items = [
     Title: "科技",
     Icon: "",
   },
+  //{
+  //  key: '/health',
+  //  Title: "健康",
+  //  Icon: "",
+  //},
   {
-    key: '/health',
-    Title: "健康",
-    Icon: "",
-  },
-  {
-    key: '/shizheng',
+    key: '/peace',
     Title: "时政",
     Icon: "",
   }

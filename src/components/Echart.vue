@@ -24,8 +24,7 @@ const yAxisData = [
 ];
 const props = defineProps({
     option: {
-        type: Object,
-        default: {}
+        type: Object
     },
     fileUrl: {
         type: String,
@@ -76,7 +75,7 @@ onMounted(() => {
     // let { styleObj, gridStyle } = props;
     // const sheetProp = getSheetProp()
     // console.log(sheetProp.data)
-    setOptions(props.option)
+    setOptions(props.option as EChartsOption)
     // setOptions({
     //     title: {
     //         show: true,

@@ -31,9 +31,9 @@ const routes = [
         component: ()=> import('../views/Health.vue'),
     },
     {
-        name: '时政',
-        path: '/shizheng',
-        component: ()=> import('../views/Shizheng.vue'),
+        name: '和平',
+        path: '/peace',
+        component: ()=> import('../views/Peace.vue'),
     }
 ]
 
