@@ -13,7 +13,7 @@
                     </el-carousel-item>
                 </el-carousel>
             </el-row>
-            <el-row class="row-container">
+            <!--<el-row class="row-container">
                 <el-col :span=12 class="col-container-chart">
                     <el-image src="src/assets/Education.png"></el-image>
                     <el-divider></el-divider>
@@ -35,7 +35,7 @@
                         </el-col>
                     </el-row>
                 </el-col>
-            </el-row>
+            </el-row>-->
             <span style="text-align: center; display: flex; min-height: 50px;"></span>
             <el-row class="row-container">
                 <el-col :span=11 class="co-container-content">
