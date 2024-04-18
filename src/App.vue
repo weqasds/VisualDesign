@@ -39,24 +39,24 @@ const items = [
     Title: "主页",
     Icon: "",
   },
-  {
-    key: '/education',
-    Title: "教育",
-    Icon: "",
-  },
+  //{
+  //  key: '/education',
+  //  Title: "教育",
+  //  Icon: "",
+  //},
   {
     key: '/keji',
     Title: "科技",
     Icon: "",
   },
-  //{
-  //  key: '/health',
-  //  Title: "健康",
-  //  Icon: "",
-  //},
+  {
+    key: '/health',
+    Title: "健康",
+    Icon: "",
+  },
   {
     key: '/peace',
-    Title: "时政",
+    Title: "和平",
     Icon: "",
   }
 ]
