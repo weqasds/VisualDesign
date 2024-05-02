@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "38241935",
+      "name": "学士帽",
+      "font_class": "xueshimao",
+      "unicode": "e8d0",
+      "unicode_decimal": 59600
+    }
+  ]
+}

@@ -2,9 +2,9 @@
     <div style="padding: 5px">
         <el-main class="main-container">
             <el-row class="row-container">
-                <el-col :span="24">
+                <el-col :span="15">
                     <h1 style="font-size: 35px;font-family: 宋体">教育</h1>
-                    <p style="text-indent: 2em;">
+                    <p style="text-indent: 2em; font-size: larger;line-height: 2.4rem;">
                         教育的定义方式决定着教育的定义内容。从哲学认识论角度分析，
                         教育的定义方式可以分为实在论定义方式和现象学定义方式。
                         教育的实在论定义方式把教育当作一个已经完成的实体或存在者，
@@ -12,109 +12,73 @@
                         教育的现象学定义方式把教育当作一个正在发生的存在，
                         教育定义是定义者参与其中而生发出的对教育的认识。
                     </p>
+                    <p style="text-indent: 2em; font-size: larger; line-height: 2.4rem;">
+                        良好的教育为个人提供了过上更丰富、更有趣的生活的机会。在社会层面上，它为人类解决其紧迫问题创造了机会。
+                        在过去的几个世纪里，世界经历了一个戏剧性的转变，从很少有人接受过任何基础教育到大多数人都接受过基础教育。
+                        这不仅体现在对教育的投入（入学率和出勤率）上，还体现在识字率大大提高的成果上。
+                    </p>
+                </el-col>
+                <el-col :span="1"></el-col>
+                <el-col :span="8">
+                    <el-image
+                        src="http://cpc.people.com.cn/NMediaFile/2018/0907/MAIN201809071049000455347978197.png"></el-image>
                 </el-col>
             </el-row>
             <el-row class="row-container">
                 <el-col :span=8>
                     <br><br><br>
+                    <h2>
+                        世界在提高基础教育水平方面取得了重大进展
+                    </h2>
                     <p class="text" style="text-indent: 2em;">
-                        近年来，新能源汽车已成为全球汽车产业转型的主要方向和促进世界经济持续增长的重要引擎。
-                        跨国汽车企业纷纷加大研发投入、完善产业布局，世界主要汽车大国相继加强关于新能源汽车的战略谋划，强化相关政策支持，
-                        推动全球产业链重塑。
-                    </p>
-                    <p class="text" style="text-indent: 2em;">
-                        在全球范围内，新一轮科技革命和产业变革的逢勃发展驱使全球汽车行业向电动化、智能化、网联化以及绿色化的趋势迈进。
-                        新能源汽车与多个领域内的变革性技术交织，包括新能源、新材料，以及互联网、物联网、大数据及人工智能等，
-                        促使汽车从单纯的交通工具向移动智能终端、储能单元和数字空间转变。
-                        此外，随着相关技术的提升，发展新能源汽车能够带动能源、交通、信息通信基础设施改造升级，促进能源消费结构优化，
-                        提升交通体系及城市运行的智能化水平这一发展不仅对构建清洁美丽世界具有重要意义，也为建设人类命运共同体贡献了积极力量。
-                        <br>
-                    </p>
-                    <p class="text">
-                        右侧是我国最近一年的新能源汽车发展情况。
+                        现在，受教育被视为一项基本权利——在许多情况下，政府有责任提供教育。
+                        但正规教育是最近才出现的现象。在图表中，我们看到了接受过一些基础教育的成年人口（15岁以上的人）和没有接受过基础教育的人的比例。
+                        在 1800 年代初期，只有不到五分之一的成年人接受过一些基础教育。教育是一种奢侈;在所有地方，它只对少数精英可用。
+                        但你可以看到，这个份额已经急剧增长，以至于这个比例现在被逆转了。不到五分之一的成年人没有接受过任何正规教育。
+                        这也反映在识字数据上：200年前，很少有人会读写。现在大多数成年人都具备基本的识字技能。
                     </p>
                 </el-col>
                 <el-col :span=16 class="col-container-chart">
-                    <Echart :option="optionObj"></Echart>
+                    <iframe
+                        src="https://ourworldindata.org/grapher/share-of-the-world-population-with-at-least-basic-education?tab=chart"
+                        loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
                 </el-col>
             </el-row>
             <el-row class="row-container">
                 <el-col :span=16 class="col-container-chart">
-                    <Echart :option="optionObj3"></Echart>
+                    <!--<Echart :option="optionObj3"></Echart>-->
+                    <iframe src="https://ourworldindata.org/grapher/learning-adjusted-years-of-school-lays?tab=map"
+                        loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
                 </el-col>
                 <el-col :span=8>
                     <br><br><br>
+                    <h2>
+                        世界各地的儿童接受的优质学习数量大不相同
+                    </h2>
                     <p class="text" style="text-indent: 2em;">
-
-                        自动驾驶，也被称为无人驾驶，是指交通工具在没有人类操作的情况下，能够完成环境的感知与导航，顺利到达目的地。
-                        国际权威的机动车工程组织将自动驾驶技术分为六个等级：L0至L5。其中，L0级是没有自动驾驶的纯人工驾驶；
-                        L1至L3级是不同程度的辅助驾驶；
-                        L4级和L5级则是高度自动驾驶和完全自动驾驶，即在没有特定条件限制下，车辆可以完全自主驾驶，不需要人类干预。
-                        目前，自动驾驶系统的设计主要分为两大技术路径，模块化方案和端到端方案。
-                    </p>
-                    <p class="text">
-                        左侧是我国最近一年的新车自动驾驶搭载情况。
+                        世界各地儿童接受的教育量仍然存在严重的不平等。
+                        这可以用儿童在学校度过的总年数来衡量。
+                        然而，研究人员也可以调整教育质量，以估计他们接受了多少年的优质学习。
+                        这是使用称为“学习调整的学校教育年限”的指标来完成的。
+                        在地图上，您可以看到世界各地的巨大差异。在世界上许多最贫穷的国家，
+                        儿童接受的学习调整学校教育不到三年。在大多数富裕国家，这超过10年。
+                        在南亚和撒哈拉以南非洲的大多数国家（儿童比例最大的地方），优质学校的平均年限不到7年。
                     </p>
                 </el-col>
             </el-row>
             <el-row class="row-container">
-                <el-col :span=8>
-                    <br><br><br><br>
-                    <p class="text" style="text-indent: 2em;">
-                        如同蒸汽时代的蒸汽机、电气时代的发电机、信息时代的计算机和互联网，人工智能正成为推动人类进入智能时代的决定性力量。
-                        全球产业界充分认识到人工智能技术引领新一轮产业变革的重大意义，纷纷转型发展，抢滩布局人工智能创新生态。
-                        世界主要发达国家均把发展人工智能作为提升国家竞争力、维护国家安全的重大战略，力图在国际科技竞争中掌握主导权。
-                        习近平总书记在十九届中央政治局第九次集体学习时深刻指出，加快发展新一代人工智能是事关我国能否抓住新一轮科技革命和产业变革机遇的战略问题。错失一个机遇，就有可能错过整整一个时代。新一轮科技革命与产业变革已曙光可见，在这场关乎前途命运的大赛场上，我们必须抢抓机遇、奋起直追、力争超越。
-                    </p>
-                    <p class="text" style="text-indent: 2em;">
-                        从专用智能向通用智能发展。如何实现从专用人工智能向通用人工智能的跨越式发展，既是下一代人工智能发展的必然趋势，
-                        也是研究与应用领域的重大挑战。2016年10月，美国国家科学技术委员会发布《国家人工智能研究与发展战略计划》，
-                        提出在美国的人工智能中长期发展策略中要着重研究通用人工智能。阿尔法狗系统开发团队创始人戴密斯·哈萨比斯提出朝着“创造解决世界上一切问题的通用人工智能”这一目标前进。微软在2017年成立了通用人工智能实验室，
-                        众多感知、学习、推理、自然语言理解等方面的科学家参与其中。
-                        <br>
-                    </p>
-                    <p class="text">
-                        右侧是我国最近一年人工智能关键芯片的发展情况。
-                    </p>
-                </el-col>
-                <el-col :span=16 class="col-container-chart">
-                    <Echart :option="optionObj2"></Echart>
-                </el-col>
-            </el-row>
-            <el-row class="row-container" style="min-height: 300px;">
-                <el-col :span="24">
-                    <Echart :option="optionObjhe"></Echart>
+                <el-col :span=24 class="col-container-chart">
+                    <h2>
+                        2022 年 15 岁学生数学平均成绩
+                    </h2>
+                    <!--<Echart :option="optionObj2"></Echart>-->
+                    <iframe
+                        src="https://ourworldindata.org/grapher/pisa-test-score-mean-performance-on-the-mathematics-scale?tab=map"
+                        loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
                 </el-col>
             </el-row>
             <el-row class="row-container">
-                <el-col :span=8>
-                    <br><br><br><br>
-                    <p class="text" style="text-indent: 2em;">
-                        人类曾经梦想能像鸟儿那样在天空中飞翔，今天，载人飞船已
-                        经在太空遨游；人类曾经梦想能像鱼儿那样在水中畅游，今天，潜
-                        水技术已经能让我们深入海底……科技让梦想变成了现实
-                    </p>
-                    <p class="text" style="text-indent: 2em;">
-                        我国航天事业从无到有、从小到大、从弱到强，以扎实的步伐和不懈的努
-                        力，把航天梦写到外太空。1970年 4月 24日，我国第一颗人造地球卫星“东方
-                        红一号”成功发射，拉开了中国人探索宇宙奥秘、和平利用太空、造福人类的
-                        序幕。火箭研制、载人航天、嫦娥探月、
-                        空间交会对接、导航卫星全球组网……中国航天事业取得了举世瞩目的成就。如今，
-                        航天技术已广泛应用到广播电视、通信、气象预报、国土普查、海洋观测、导航定
-                        位、防灾减灾、远程教育、农业生产、环
-                        境监测等国民经济和社会发展的各个领域。
-                        <br>
-                    </p>
-                    <p class="text">
-                        右侧是我国最近一年的航空航天发展情况。
-                    </p>
-                </el-col>
-                <el-col :span=16 class="col-container-chart">
-                    <Echart :option="optionObj4"></Echart>
-                </el-col>
-            </el-row>
-            <el-row class="row-container">
-                <br><br><br><br><br><br><br>
+                <br><br>
             </el-row>
         </el-main>
     </div>
@@ -125,214 +89,6 @@
 import Echart from '@/components/Echart.vue';
 import { EChartsOption, number } from "echarts";
 import { onMounted, ref, Ref, unref } from "vue";
-const optionObj = {
-    tooltip: {
-        trigger: 'axis',
-        axisPointer: {
-            type: 'shadow'
-        }
-    },
-    legend: {},
-    grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    },
-    xAxis: [
-        {
-            type: 'category',
-            data: [
-                '2023年12月',
-                '2023年11月',
-                '2023年10月',
-                '2023年9月',
-                '2023年8月',
-                '2023年7月',
-                '2023年6月',
-                '2023年5月',
-                '2023年4月',
-                '2023年3月'
-            ],
-            name: '时间'
-        }
-    ],
-    yAxis: [
-        {
-            type: 'value'
-        }
-    ],
-    series: [
-        {
-            name: '新能源汽车产量当期值(万辆)',
-            type: 'bar',
-            stack: 'Bd',
-            emphasis: {
-                focus: 'series'
-            },
-            data: [114.1, 100.6, 92.7, 84.7, 80, 75.2, 74.9, 67.5, , 58.6, 66, 8]
-        },
-        {
-            name: '新能源汽车产量累计值(万辆)',
-            type: 'bar',
-            stack: 'Ad',
-            emphasis: {
-                focus: 'series'
-            },
-            data: [944.3, 804.9, 699.8, 609, 515.7, 435.8, 361.1, 284.6, 215.7, 162.9]
-        },
-        {
-            name: '新能源汽车产量同比增长(%)',
-            type: 'bar',
-            stack: 'Bd',
-            emphasis: {
-                focus: 'series'
-            },
-            data: [43.7, 35.6, 27.9, 12.5, 13.8, 24.9, 27.6, 43.6, 85.4, 33.3]
-        },
-        {
-            name: '新能源汽车产量累计增长(%)',
-            type: 'bar',
-            stack: 'Ad',
-            emphasis: {
-                focus: 'series'
-            },
-            data: [30.3, 27.7, 26.7, 26.7, 29.6, 33.2, 35, 37, 32.8, 22.5]
-        },
-    ]
-};
-const optionObj2 = {
-    title: {
-        text: '2022年中国人工智能芯片市场的规模占比',
-        left: 'center'
-    },
-    tooltip: {
-        trigger: 'item',
-        formatter: '{a} <br/>{b} : {c} ({d}%)'
-    },
-    legend: {
-        bottom: 10,
-        left: 'center',
-        data: ['GPU', 'NPU', 'ASIC', 'FPGA']
-    },
-    series: [
-        {
-            type: 'pie',
-            radius: '65%',
-            center: ['50%', '50%'],
-            selectedMode: 'single',
-            data: [
-                {
-                    value: 89,
-                    name: 'GPU',
-                    label: {
-                        formatter: [
-                            '{title|{b}}{abg|}',
-                            '  {weatherHead|厂家}{rateHead|占比}',
-                            '{hr|}',
-                            '  NVIDIA{rate|88%}',
-                            '  AMD{rate|8%}',
-                            '  Intel{rate|4%}'
-                        ].join('\n'),
-                        backgroundColor: '#eee',
-                        borderColor: '#777',
-                        borderWidth: 1,
-                        borderRadius: 4,
-                        rich: {
-                            title: {
-                                color: '#eee',
-                                align: 'center'
-                            },
-                            abg: {
-                                backgroundColor: '#333',
-                                width: '100%',
-                                align: 'right',
-                                height: 25,
-                                borderRadius: [4, 4, 0, 0]
-                            },
-                            weatherHead: {
-                                color: '#333',
-                                height: 24,
-                                align: 'left'
-                            },
-                            hr: {
-                                borderColor: '#777',
-                                width: '100%',
-                                borderWidth: 0.5,
-                                height: 0
-                            },
-                            valueHead: {
-                                color: '#333',
-                                width: 20,
-                                padding: [0, 20, 0, 30],
-                                align: 'center'
-                            },
-                            rate: {
-                                width: 40,
-                                align: 'right',
-                                padding: [0, 10, 0, 0]
-                            },
-                            rateHead: {
-                                color: '#333',
-                                width: 40,
-                                align: 'right',
-                                padding: [0, 10, 0, 0]
-                            }
-                        }
-                    }
-                },
-                { value: 9.6, name: 'NPU' },
-                { value: 1, name: 'ASIC' },
-                { value: 0.8, name: 'FPGA' }
-            ],
-            emphasis: {
-                itemStyle: {
-                    shadowBlur: 10,
-                    shadowOffsetX: 0,
-                    shadowColor: 'rgba(0, 0, 0, 0.5)'
-                }
-            }
-        }
-    ]
-};
-const optionObj3 = {
-    title: {
-        text: '新车自动驾驶搭载率'
-    },
-    tooltip: {
-        trigger: 'axis',
-        axisPointer: {
-            type: 'shadow'
-        }
-    },
-    legend: {},
-    grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    },
-    xAxis: {
-        type: 'value',
-        boundaryGap: [0, 0.02],
-        axisLabel: {
-            formatter: '{value}%',
-            interval: 1
-        }
-    },
-    yAxis: {
-        type: 'category',
-        data: ['无自动驾驶', 'L1', 'L2', 'L3', 'L4'],
-        inverse: true
-    },
-    series: [
-        {
-            name: '搭载率',
-            type: 'bar',
-            data: [11, 23, 35, 20, 11]
-        }
-    ]
-};
 
 
 
