@@ -14,7 +14,7 @@
                     </p>
                 </el-col>
                 <el-col :span="12" class="img-container">
-                    <el-image src="http://cvh.bmicc.cn/cvh/images/rt.png"></el-image>
+                    <el-image :src="rt"></el-image>
                 </el-col>
             </el-row>
             <el-row class="row-container">
@@ -103,6 +103,7 @@
 </template>
 
 <script setup lang="ts">
+import rt from '@/assets/rt.png';
 import Echart from '@/components/Echart.vue';
 const optionObj = {
     title: [

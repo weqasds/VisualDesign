@@ -20,8 +20,7 @@
                 </el-col>
                 <el-col :span="1"></el-col>
                 <el-col :span="8">
-                    <el-image
-                        src="http://cpc.people.com.cn/NMediaFile/2018/0907/MAIN201809071049000455347978197.png"></el-image>
+                    <el-image :src="EduMain"></el-image>
                 </el-col>
             </el-row>
             <el-row class="row-container">
@@ -86,6 +85,7 @@
 </template>
 
 <script setup lang="ts">
+import EduMain from '@/assets/EduMain.png';
 import Echart from '@/components/Echart.vue';
 import { EChartsOption, number } from "echarts";
 import { onMounted, ref, Ref, unref } from "vue";

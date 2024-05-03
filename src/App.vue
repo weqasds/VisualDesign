@@ -4,7 +4,7 @@
       <el-menu mode="horizontal" default-active="1" @select="handleSelect">
         <el-menu-item :index="`0`">
           <a href="https://www.un.org/zh/">
-            <img style="width: 100px" :src="`./src/assets/Diqiu.svg`" alt="Element logo">
+            <img style="width: 100px" src="/src/assets/Diqiu.svg" alt="Element logo">
           </a>
         </el-menu-item>
         <div style="flex-grow: 0.9;"></div>
