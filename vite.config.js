@@ -8,10 +8,13 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  publicDir: "./src/assets",
+  //publicDir: "./src/assets",
+  //base: "./",
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
+      //@ : /vite.config.js
     }
   }
 })
+

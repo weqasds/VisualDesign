@@ -2,20 +2,20 @@
     <div class="container">
         <el-main class="main-container">
             <el-row class="row-container">
-                <el-carousel type="card" height="475px" interval="2000" style="width: 100%;align-items: stretch;">
+                <el-carousel type="card" height="475px" :interval="2000" style="width: 100%;align-items: stretch;">
                     <el-carousel-item v-for="item in car_items" :key="item.index">
                         <router-link :to="item.link">
                             <el-image :src="item.src"></el-image>
                             <h1 style="text-align: center;position: relative; top: -70px;">{{
-                        item.content
-                    }}</h1>
+                    item.content
+                }}</h1>
                         </router-link>
                     </el-carousel-item>
                 </el-carousel>
             </el-row>
             <el-row class="row-container">
                 <el-col :span=12 class="col-container-chart">
-                    <el-image src="src/assets/Education.png"></el-image>
+                    <el-image :src="Education"></el-image>
                     <el-divider></el-divider>
                     <el-link></el-link>
                 </el-col>
@@ -65,7 +65,7 @@
                     </el-row>
                 </el-col>
                 <el-col :span=12 class="col-container-chart" :offset="1">
-                    <el-image src="src/assets/LLM.png"></el-image>
+                    <el-image :src="LLM"></el-image>
                     <el-divider></el-divider>
                     <el-link></el-link>
                 </el-col>
@@ -73,7 +73,7 @@
             <span style="text-align: center; display: flex; min-height: 50px;"></span>
             <el-row class="row-container">
                 <el-col :span=12 class="col-container-chart">
-                    <el-image src="src/assets/Health.png"></el-image>
+                    <el-image :src="Health"></el-image>
                     <el-divider></el-divider>
                     <el-link></el-link>
                 </el-col>
@@ -105,7 +105,7 @@
             </el-row>
             <el-row class="row-container">
                 <el-col :span=12 class="col-container-chart">
-                    <el-image src="src/assets/Peace.png"></el-image>
+                    <el-image :src="Peace"></el-image>
                     <el-divider></el-divider>
                     <el-link></el-link>
                 </el-col>
@@ -143,6 +143,12 @@
 
 
 <script setup>
+import { ref } from 'vue'
+import LLM from '@/assets/LLM.png'
+import Education from '@/assets/Education.png'
+import Health from '@/assets/Health.png'
+import Peace from '@/assets/Peace.png'
+console.log(LLM, Education, Health, Peace)
 const car_items = [
     {
         src: "https://cdn.pixabay.com/photo/2020/05/16/16/43/book-5178205_1280.jpg",

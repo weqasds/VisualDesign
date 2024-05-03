@@ -2,13 +2,13 @@
   <el-container style="display: flex; flex-direction: column;align-items: stretch;">
     <el-header>
       <el-menu mode="horizontal" default-active="1" @select="handleSelect">
-        <el-menu-item index="0">
+        <el-menu-item :index="`0`">
           <a href="https://www.un.org/zh/">
-            <img style="width: 100px" src="./assets/Diqiu.svg" alt="Element logo">
+            <img style="width: 100px" :src="`./src/assets/Diqiu.svg`" alt="Element logo">
           </a>
         </el-menu-item>
         <div style="flex-grow: 0.9;"></div>
-        <el-menu-item v-for="(item, index) in items" :index="index">
+        <el-menu-item v-for="(item, index) in items" :index="`${index}`">
           <router-link :to="item.key">
             <el-icon color="black">
               <Menu />
@@ -55,6 +55,7 @@ const handleSelect = (key, keyPath, item) => {
 
   console.log(key, item)
 }
+console.log(import.meta.url)
 const items = [
   {
     key: '/',
