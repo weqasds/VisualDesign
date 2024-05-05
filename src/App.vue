@@ -23,16 +23,16 @@
     </el-main>
     <el-footer class="footer" style="">
       <el-col :span="8">
-        <a href="https://cn.vuejs.org/">
-          <img style="width: 100px;margin-top: 50px;" src="./assets/logo.svg" alt="Element logo">
+        <a href="https://www.un.org/zh/">
+          <img style="width: 150px;margin-top: 50px;" src="./assets/Diqiu.svg" alt="Element logo">
         </a>
-        <h4 style="color: rgb(255, 255, 255);">
-          Vue
-        </h4>
+        <h1 style="color: rgb(255, 255, 255);">
+          “让世界更美好”
+        </h1>
       </el-col>
       <el-col class="el-col" :span="8">
         <h2 style="color: rgb(255, 255, 255);">
-          友情链接
+          了解更多
         </h2>
         <a style="text-decoration: none; font-size: large;padding: 5px;" href="https://www.stats.gov.cn/">国家统计局</a>
         <a style="text-decoration: none; font-size: large;padding: 5px;" href="https://cn.vuejs.org/">vue官网</a>
@@ -42,8 +42,8 @@
       <el-col :span="8">
         <h2 style="color: rgb(255, 255, 255);">© All Rights Reserved.
         </h2>
-        <h3 style="color: rgb(255, 255, 255);">2020151250赵怡睿</h3>
-        <h3 style="color: rgb(255, 255, 255);">example@qq.com</h3>
+        <h3 style="color: rgb(255, 255, 255);">联系电话：18735140794</h3>
+        <h3 style="color: rgb(255, 255, 255);">联系邮箱：2578533368@qq.com</h3>
       </el-col>
     </el-footer>
   </el-container>
@@ -107,7 +107,7 @@ const items = [
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(17, 1, 1)
+  background-color: rgba(23, 42, 134, 0.386)
 }
 
 .footer .el-col a {
